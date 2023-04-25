@@ -30,7 +30,13 @@
                             <outlet property="delegate" destination="jg2-Bl-DRh" id="9Aq-mE-tna"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Track List" id="q5r-ae-bYo"/>
+                    <navigationItem key="navigationItem" title="Track List" id="q5r-ae-bYo">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="qGd-dK-ItG">
+                            <connections>
+                                <segue destination="MvP-V4-Ay1" kind="show" id="tZ6-ij-aSi"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I35-gg-kV0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -53,6 +59,70 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3ty-M4-45i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-141.22137404580153" y="-61.267605633802823"/>
+        </scene>
+        <!--Add New Track-->
+        <scene sceneID="Iy0-jg-g9c">
+            <objects>
+                <tableViewController id="FgP-Kv-Zvg" customClass="NewTrackTableViewController" customModule="test" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="VLp-3c-Wep">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <sections>
+                            <tableViewSection headerTitle="Track Name" id="dGD-JT-dBO">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="1NE-Dr-ZRm">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1NE-Dr-ZRm" id="IYz-FN-zb3">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="FgP-Kv-Zvg" id="GSR-lc-V00"/>
+                            <outlet property="delegate" destination="FgP-Kv-Zvg" id="HVf-sO-USQ"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Add New Track" id="3WV-xd-O0s">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="6eQ-tP-A7Y">
+                            <connections>
+                                <segue destination="jZT-tK-a6r" kind="unwind" unwindAction="unwindSegueWithSegue:" id="XiM-W8-cNU"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="save" id="jWv-Fd-3s1">
+                            <connections>
+                                <segue destination="jZT-tK-a6r" kind="unwind" identifier="save" unwindAction="unwindSegueWithSegue:" id="l6C-PY-tGM"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9OG-67-2Oj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="jZT-tK-a6r" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2686.2595419847326" y="-61.267605633802823"/>
+        </scene>
+        <!--Add New Track-->
+        <scene sceneID="Uag-Mf-tTV">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MvP-V4-Ay1" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Add New Track" id="R9s-da-4LC"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="AGj-aU-Y0F">
+                        <rect key="frame" x="0.0" y="59" width="393" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="FgP-Kv-Zvg" kind="relationship" relationship="rootViewController" id="sdf-hm-AOJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TG3-xA-Khm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1759.5419847328244" y="-61.267605633802823"/>
         </scene>
     </scenes>
     <resources>

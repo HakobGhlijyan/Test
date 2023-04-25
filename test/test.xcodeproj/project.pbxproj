@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		344048F529F8094300D272BB /* NewTrackTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344048F429F8094300D272BB /* NewTrackTableViewController.swift */; };
 		349C569B29F8025E00884CC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349C569A29F8025E00884CC5 /* AppDelegate.swift */; };
 		349C569D29F8025E00884CC5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349C569C29F8025E00884CC5 /* SceneDelegate.swift */; };
 		349C56A229F8025E00884CC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 349C56A029F8025E00884CC5 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		344048F429F8094300D272BB /* NewTrackTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTrackTableViewController.swift; sourceTree = "<group>"; };
 		349C569729F8025E00884CC5 /* test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		349C569A29F8025E00884CC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		349C569C29F8025E00884CC5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				349C569A29F8025E00884CC5 /* AppDelegate.swift */,
 				349C569C29F8025E00884CC5 /* SceneDelegate.swift */,
 				349C56A029F8025E00884CC5 /* Main.storyboard */,
+				344048F429F8094300D272BB /* NewTrackTableViewController.swift */,
 				349C56AE29F8028B00884CC5 /* TableViewController.swift */,
 				349C56B029F8037300884CC5 /* Track.swift */,
 				349C56A329F8025F00884CC5 /* Assets.xcassets */,
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				349C569B29F8025E00884CC5 /* AppDelegate.swift in Sources */,
+				344048F529F8094300D272BB /* NewTrackTableViewController.swift in Sources */,
 				349C56AF29F8028B00884CC5 /* TableViewController.swift in Sources */,
 				349C569D29F8025E00884CC5 /* SceneDelegate.swift in Sources */,
 				349C56B129F8037300884CC5 /* Track.swift in Sources */,
